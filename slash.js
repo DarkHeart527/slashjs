@@ -22,7 +22,7 @@ let slash = (func) => {
    
   break;
   default:
-    console.error(`function not found @ ${func}()`;
+    console.error(`function not found @ ${func}()`);
   break;
  }
 }
