@@ -17,8 +17,14 @@
 */
 
 let slash = (func) => {
- switch(func) {
-  case 'check':
+ let type = undefined;
+ if (func[0] + func[1] == '//') {
+  type = '//';
+ } else if (func[0] == '/' && func[1] != '/') {
+  type = '/';
+ }
+ switch(type) {
+  case '/':
    
   break;
   default:
